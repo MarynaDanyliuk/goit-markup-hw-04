@@ -126,6 +126,32 @@ img {
   color: var(--logo-white-txt);
 }
 
+.hero-overlay {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  /* background-image: linear-gradient(to right, rgba(255, 0, 0, 0.5)),
+    rgba(0, 0, 255, 0.5), url(../img/index_sq_jpg/Hero-bg.jpg); */
+  /* background-image: linear-gradient(
+      to right,
+      rgba(255, 0, 0, 0.5),
+      rgba(0, 0, 255, 0.5)
+    ),
+    url(../img/index_sq_jpg/Hero-bg.jpg); */
+
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../img/index_sq_jpg/Hero-bg.jpg);
+  background-color: #c4c4c4;
+  /* background-repeat: no-repeat;
+  background-size: cover; */
+  background-position: center;
+}
+
 /* Site nav */
 
 .page-header .container {
@@ -271,6 +297,38 @@ img {
 
 .benefit-item {
   width: 270px;
+}
+
+.benefit-item::before {
+  content: " ";
+  display: block;
+  height: 120px;
+  /* background-color: #188ce8; */
+  /* background-image: url(../img/index_sq_jpg/icons/antenna\ 1.png),
+    url(../img/index_sq_jpg/icons/clock\ 1.png),
+    url(../img/index_sq_jpg/icons/diagram\ 1.png),
+    url(../img/index_sq_jpg/icons/astronaut\ 1.png); */
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--button-filter-bg-color);
+  margin-bottom: 30px;
+}
+
+.benefit-item:nth-child(1):before {
+  background-image: url(../img/index_sq_jpg/icons/antenna\ 1.svg);
+}
+
+.benefit-item:nth-child(2):before {
+  background-image: url(../img/index_sq_jpg/icons/clock\ 1.svg);
+}
+
+.benefit-item:nth-child(3):before {
+  background-image: url(../img/index_sq_jpg/icons/diagram\ 1.svg);
+}
+
+.benefit-item:nth-child(4):before {
+  background-image: url(../img/index_sq_jpg/icons/astronaut\ 1.svg);
 }
 
 .benefit-item:not(:last-child),

@@ -131,24 +131,21 @@ img {
 .page-header .container {
   display: flex;
   align-items: center;
-  /* padding-top: 24px;
-  padding-bottom: 25px; */
 }
 
 .site-nav {
-  display: flex;
+  /* display: flex; */
   margin-left: 93px;
 }
 
-.site-nav .link,
-.contacts-nav .link {
+.site-nav .link {
   display: inline-block;
   padding-top: 6px;
   padding-bottom: 6px;
 }
 
 .contacts-nav {
-  display: flex;
+  /* display: flex; */
   margin-left: auto;
 }
 
@@ -173,9 +170,9 @@ img {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  display: flex;
 }
 
-.link,
 .cont-nav-header,
 .cont-nav-footer {
   text-decoration: none;
@@ -203,9 +200,34 @@ img {
   color: var(--accent-txt-color);
 }
 
+/* .cont-nav-header {
+  display: flex;
+  align-items: center;
+} */
+
+/* .cont-nav-header {
+  display: flex;
+} */
+
+.link {
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+}
+
 .icon-mail {
   width: 16px;
   height: 12px;
+  display: block;
+  margin-right: 10px;
+}
+
+.icon-tel {
+  width: 10px;
+  height: 16px;
+  display: block;
+  margin-right: 10px;
 }
 
 /* .link.mail::before {
@@ -312,23 +334,40 @@ img {
   width: 270px;
 }
 
-.benefit-item::before {
+.benefit-item-icon {
+  display: flex;
+  width: 270px;
+  height: 120px;
+  background-color: var(--button-filter-bg-color);
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.benefit-icon {
+  display: block;
+  width: 70px;
+  height: 70px;
+  /* background-color: var(--button-filter-bg-color); */
+}
+
+/* .benefit-item::before {
   content: " ";
   display: block;
-  height: 120px;
-  /* background-color: #188ce8; */
-  /* background-image: url(../img/index_sq_jpg/icons/antenna\ 1.png),
+  height: 120px; */
+/* background-color: #188ce8; */
+/* background-image: url(../img/index_sq_jpg/icons/antenna\ 1.png),
     url(../img/index_sq_jpg/icons/clock\ 1.png),
     url(../img/index_sq_jpg/icons/diagram\ 1.png),
     url(../img/index_sq_jpg/icons/astronaut\ 1.png); */
-  background-size: auto;
+/* background-size: auto;
   background-repeat: no-repeat;
   background-position: center;
   background-color: var(--button-filter-bg-color);
   margin-bottom: 30px;
-}
+} */
 
-.benefit-item:nth-child(1)::before {
+/* .benefit-item:nth-child(1)::before {
   background-image: url(../img/index_sq_jpg/icons/antenna\ 1.svg);
 }
 
@@ -342,7 +381,7 @@ img {
 
 .benefit-item:nth-child(4)::before {
   background-image: url(../img/index_sq_jpg/icons/astronaut\ 1.svg);
-}
+} */
 
 .benefit-item:not(:last-child),
 .projects-item:not(:last-child),

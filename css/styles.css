@@ -53,6 +53,10 @@ img {
   height: auto;
 }
 
+a {
+  cursor: pointer;
+}
+
 /* header {
   padding-top: 24px;
   padding-bottom: 25px;
@@ -513,6 +517,31 @@ img {
   padding: 30px 32px;
 }
 
+/* Clients */
+
+.clients {
+  display: flex;
+  flex-basis: auto;
+  gap: 30px;
+  justify-content: center;
+}
+
+.clients-link {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clients-icon {
+  width: 106px;
+  height: 60px;
+  display: block;
+}
+
 /* Footer */
 
 .page-footer {
@@ -633,6 +662,11 @@ img {
   letter-spacing: 0.06em;
   color: var(--title-txt-color);
   margin-bottom: 4px;
+}
+
+.card-link {
+  display: block;
+  text-decoration: none;
 }
 
 .portfolio-descr {

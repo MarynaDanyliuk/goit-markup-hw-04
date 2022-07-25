@@ -213,26 +213,22 @@ a {
   align-items: center;
 }
 
-.icon-mail {
-  /* width: 16px;
-  height: 12px; */
+/* .icon-mail {
   display: block;
   margin-right: 10px;
   fill: currentColor;
-}
-
-.icon-tel {
-  width: 10px;
-  height: 16px;
-  display: block;
-  margin-right: 10px;
-  fill: currentColor;
-}
-
-/* .link .icon-mail:hover,
-.link .icon-mail:focus {
-  color: var(--accent-txt-color);
 } */
+
+.icon-nav {
+  display: block;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.icon-nav:hover,
+.icon-nav:focus {
+  fill: var(--accent-txt-color);
+}
 
 /* Container */
 
@@ -396,23 +392,26 @@ a {
 
 .social-net {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 10px;
   margin-top: 10px;
 }
 
 .social-net-item {
+}
+
+.social-net-link {
   display: flex;
   height: 44px;
   width: 44px;
   border-radius: 50%;
+  display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #188ce8;
 }
 
-.icon-inst,
-.icon-tw,
-.icon-fb,
-.icon-lnkd {
+.social-icon {
   display: block;
   height: 20px;
   width: 20px;
@@ -427,7 +426,6 @@ a {
 
 .clients {
   display: flex;
-  flex-basis: auto;
   gap: 30px;
   justify-content: center;
 }
@@ -446,6 +444,11 @@ a {
   width: 106px;
   height: 60px;
   display: block;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  fill: var(--button-bg-color);
 }
 
 /* Footer */

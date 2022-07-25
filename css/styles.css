@@ -214,8 +214,8 @@ a {
 }
 
 .icon-mail {
-  width: 16px;
-  height: 12px;
+  /* width: 16px;
+  height: 12px; */
   display: block;
   margin-right: 10px;
   fill: currentColor;
@@ -479,6 +479,40 @@ a {
   font-style: inherit;
   color: var(--address-txt);
   margin-top: 20px;
+}
+
+.page-footer .container {
+  display: flex;
+}
+
+.footer-social-net {
+  display: flex;
+  flex-direction: column;
+  margin-left: 70px;
+}
+
+.footer-social-net .title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--address-txt);
+  margin-bottom: 20px;
+}
+
+.footer-icon-list {
+  display: flex;
+  width: 206px;
+  justify-content: space-between;
+}
+
+.icon-eclipce {
+  display: block;
+  height: 44px;
+  width: 44px;
+
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 /* Button */

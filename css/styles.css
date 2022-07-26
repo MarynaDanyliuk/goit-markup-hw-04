@@ -92,18 +92,6 @@ a {
   overflow: hidden;
 }
 
-/* .features-list,
-.team-list,
-.projects-list,
-.site-nav,
-.contacts-nav,
-.filter,
-.portfolio-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-} */
-
 /* Header */
 
 .page-header {
@@ -583,9 +571,6 @@ a {
   display: flex;
   margin-bottom: 50px;
   justify-content: center;
-  /* width: 612px;
-  margin-left: auto;
-  margin-right: auto; */
 }
 
 .filter .filter-item + .filter-item {

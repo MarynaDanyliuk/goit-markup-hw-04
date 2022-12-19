@@ -546,7 +546,8 @@ a {
   margin: 0 auto;
 }
 
-.button.primary:hover .button.primary:focus {
+.button.primary:hover,
+.button.primary:focus {
   color: var(--button-txt-color);
   background-color: var(--button-bg-act-color);
 }
